@@ -1,0 +1,68 @@
+body{
+  .category-videos{
+    #videos-paginated{
+        h2{
+          text-align: center;
+        }
+    }
+    .category-paginated-list{
+      padding: 10px 20px;
+      overflow: hidden;
+      .paginated-video-container{
+        padding:10px;
+        .category-video-item-container{
+          border: 1px solid #CECECE;
+          img{
+            max-width: 100%;
+          }
+          .text-container{
+            padding: 10px;
+            h4{
+              @include font(14,18,300);
+              color: $brand-gray-text-color;
+              margin-bottom:0px;
+            }
+            p{
+              @include font(12,24,300);
+              color: $brand-gray-text-color;
+              a{
+                @include font(12,24,300);
+                color: $brand-gray-text-color;
+              }
+              &.actions{
+                margin-bottom:0px;
+                a{
+                  i{
+                    padding-top: 4px;
+                    margin: 0 3px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+    .read-more{
+      padding: 20px;
+      text-align: center;
+      .navigation{
+        a{
+          padding:0px 90px;
+          @include font(16,38,300);
+          color:$brand-gray-text-color;
+          border: 1px solid $brand-gray-text-color;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+.message-empty{
+  text-align: center;
+  @include font(16,22,300);
+  margin-top:20px;
+}
