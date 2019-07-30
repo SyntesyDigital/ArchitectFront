@@ -19,7 +19,7 @@
 
     @if(isset($node['field']['type']) && ( $node['field']['type'] == "widget" || $node['field']['type'] == "widget-list") )
 
-      @includeIf('front::partials.widgets.'.strtolower($node['field']['label']),
+      @includeIf('widgets::'.$node['field']['label'].'.main',
         [
           "field" => $node['field'],
         ]
